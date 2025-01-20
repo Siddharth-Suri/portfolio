@@ -5,11 +5,17 @@ export function About() {
     const [currentTheme, setCurrentTheme] = useRecoilState(colourTheme);
 
     return (
-        <div>
-            <div className="font-custom">
-                hello , this is siddharth
-                <br></br>i usually work with frontend or things that i am
-                interested in
+        <div
+            className={`flex font-custom justify-center min-h-screen w-full text-center text-lg items-center  ${
+                currentTheme === "dark"
+                    ? "bg-black  text-white"
+                    : "bg-white text-black"
+            }`}
+        >
+            <div className="-translate-y-10">
+                halo , this is siddharth i am an undergrad in my sophomore year
+                <br></br> of university ; i enjoy reading, coding and watching
+                movies
             </div>
         </div>
     );
