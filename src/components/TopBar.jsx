@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { colourTheme } from "../../state/Theme";
 import { useRecoilState, useRecoilValue } from "recoil";
+import { ThemeButton } from "./themeButton";
 import { memo } from "react";
 export const TopBar = memo(() => {
     const currentTheme = useRecoilValue(colourTheme);
@@ -27,8 +28,12 @@ export const TopBar = memo(() => {
                     About
                 </div>
             </div>
-            <div className="p-4 cursor-pointer hover:text-yellow-400 hover:underline">
-                Coffeee
+
+            <div className="flex p-4 cursor-pointer hover:text-yellow-400 hover:underline">
+                <div className="p-4">
+                    <ThemeButton></ThemeButton>
+                </div>
+                <div className="p-4">Coffeee</div>
             </div>
         </div>
     );
