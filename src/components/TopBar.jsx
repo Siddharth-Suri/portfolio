@@ -11,7 +11,7 @@ export const TopBar = memo(() => {
             className={`flex p-4 font-custom justify-around items-center text-xl gap-2 font-semibold ${
                 currentTheme === "dark"
                     ? "bg-black  text-white"
-                    : "bg-white text-black"
+                    : "bg-amber-50 text-black"
             }`}
         >
             <div className="flex">
@@ -29,11 +29,13 @@ export const TopBar = memo(() => {
                 </div>
             </div>
 
-            <div className="flex p-4 cursor-pointer hover:text-yellow-400 hover:underline">
-                <div className="p-4">
+            <div className="flex p-4 ce">
+                <div className="p-4 cursor-pointer hover:text-yellow-400 hover:underline">
                     <ThemeButton></ThemeButton>
                 </div>
-                <div className="p-4">Coffeee</div>
+                <div className="p-4 cursor-pointer hover:text-yellow-400 hover:underline">
+                    Coffeee
+                </div>
             </div>
         </div>
     );

@@ -12,7 +12,7 @@ export const Projects = memo(() => {
             className={`flex p-4 h-screen font-custom justify-center   text-xl gap-2 font-semibold ${
                 currentTheme === "dark"
                     ? "bg-black  text-white"
-                    : "bg-white text-black"
+                    : "bg-amber-50 text-black"
             }`}
         >
             <div className="cols-start-3 w-7/12 -translate-x-6 p-4">

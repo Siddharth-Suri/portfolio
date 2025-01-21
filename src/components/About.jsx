@@ -10,7 +10,7 @@ export const About = memo(() => {
             className={`flex font-custom justify-around h-screen w-full text-center text-lg items-start  ${
                 currentTheme === "dark"
                     ? "bg-black  text-white"
-                    : "bg-white text-black"
+                    : "bg-amber-50 text-black"
             }`}
         >
             <div className="p-5 text-start">
