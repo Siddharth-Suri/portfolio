@@ -13,10 +13,19 @@ export const About = memo(() => {
                     : "bg-white text-black"
             }`}
         >
-            <div className="p-5">
+            <div className="p-5 text-start">
                 halo , this is siddharth i am an undergrad in my sophomore year
-                <br></br> of university ; i enjoy reading, coding and watching
-                movies
+                of university
+                <br></br>
+                <br></br>i enjoy:
+                <div className="pl-5">
+                    <br></br>
+                    <ul className="list-disc pl-5">
+                        <li>books</li>
+                        <li>music</li>
+                        <li>movies</li>
+                    </ul>
+                </div>
             </div>
         </div>
     );

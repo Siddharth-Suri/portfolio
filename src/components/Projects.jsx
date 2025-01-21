@@ -19,26 +19,42 @@ export const Projects = memo(() => {
                 projects
                 <div className="pl-8 p-4">
                     ├─web
-                    <div className="flex pl-8 p-4 pb-2   cursor-pointer">
+                    <div className="flex pl-8 p-4 pb-2  ">
                         ├─
-                        <div className="hover:underline hover:text-teal-300">
-                            amazon-cart
-                        </div>
+                        <a
+                            href="https://amazon-cart-seven.vercel.app/ "
+                            target="_blank"
+                        >
+                            <div className="hover:underline cursor-pointer hover:text-sky-300">
+                                amazon-cart
+                            </div>
+                        </a>
                     </div>
-                    <div className="flex pl-8 p-4 pt-2 pb-2  cursor-pointer">
+                    <div className="flex pl-8 p-4 pt-2 pb-2 ">
                         ├─
-                        <div className="hover:underline hover:text-teal-300">
+                        <div
+                            className="hover:underline cursor-pointer hover:text-sky-300"
+                            onClick={() => window.location.reload()}
+                        >
                             this-site
                         </div>
                     </div>
-                    <div className="flex pl-8 p-4 pt-2 pb-2   cursor-pointer">
+                    <div className="flex pl-8 p-4 pt-2 pb-2 ">
                         ├─
-                        <div className="hover:underline hover:text-teal-300">
-                            heatmap
+                        <div className="hover:underline cursor-pointer hover:text-sky-300">
+                            heatmap (working on it)
                         </div>
                     </div>
                 </div>
-                <div className="pl-8 p-4">├─others</div>
+                <div className="pl-8 p-4">
+                    ├─others
+                    <div className="flex pl-8 p-4 pt-2 pb-2 ">
+                        ├─
+                        <div className="cursor-pointer hover:text-sky-300">
+                            nothing
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );
