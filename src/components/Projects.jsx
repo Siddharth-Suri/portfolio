@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { colourTheme } from "../../state/Theme";
-import { useRecoilState, useRecoilValue } from "recoil";
+import { useRecoilValue } from "recoil";
+
 import { memo } from "react";
 
 export const Projects = memo(() => {

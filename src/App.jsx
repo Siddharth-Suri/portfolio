@@ -3,8 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import { About } from "./components/About";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { RecoilRoot, useRecoilState } from "recoil";
-import { colourTheme } from "../state/Theme";
+import { RecoilRoot } from "recoil";
 import { TopBar } from "./components/TopBar";
 import { Projects } from "./components/Projects";
 function App() {

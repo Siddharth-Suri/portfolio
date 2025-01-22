@@ -51,7 +51,7 @@ export const TopBar = memo(() => {
                     >
                         Buy me a
                     </div>
-                    <div className="pl-3 hover:underline">Coffeee</div>
+                    <div className="pl-3 hover:underline">Coffee</div>
                 </div>
             </div>
         </div>
