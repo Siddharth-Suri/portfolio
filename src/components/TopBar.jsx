@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { colourTheme } from "../../state/Theme";
 import { useRecoilState, useRecoilValue } from "recoil";
-import { ThemeButton } from "./themeButton";
+import { ThemeButton } from "./ThemeButton";
 import { HoverMechanic } from "../../state/HoveringMechanic";
 import { memo } from "react";
 
