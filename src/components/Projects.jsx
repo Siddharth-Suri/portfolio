@@ -10,17 +10,17 @@ export const Projects = memo(() => {
 
     return (
         <div
-            className={`flex p-4 h-screen font-custom justify-center   text-xl gap-2 font-semibold ${
+            className={` grid grid-cols-8 auto-rows-min min-h-screen p-2 overflow-auto font-custom  items-start  text-xl font-semibold ${
                 currentTheme === "dark"
                     ? "bg-black  text-white"
                     : "bg-amber-50 text-black"
             }`}
         >
-            <div className="cols-start-3 w-7/12 -translate-x-6 p-4">
-                projects
-                <div className="pl-8 p-4">
+            <div className=" p-4 col-span-3 col-start-3 row-start-1 ">
+                ├─projects
+                <div className="pl-8 p-2">
                     ├─web
-                    <div className="flex pl-8 p-4 pb-2  ">
+                    <div className="flex pl-8 p-2 pb-2  ">
                         ├─
                         <a
                             href="https://amazon-cart-seven.vercel.app/ "
@@ -47,14 +47,37 @@ export const Projects = memo(() => {
                         </div>
                     </div>
                 </div>
-                <div className="pl-8 p-4">
-                    ├─others
-                    <div className="flex pl-8 p-4 pt-2 pb-2 ">
-                        ├─
-                        <div className="cursor-pointer hover:text-sky-300">
-                            nothing
-                        </div>
+            </div>
+
+            <div className=" p-4 col-span-3 col-start-3">
+                ├─others
+                <div className="flex pl-8 p-4 pt-2 pb-2 ">
+                    ├─
+                    <div className="cursor-pointer hover:underline hover:text-sky-300">
+                        nothing
                     </div>
+                </div>
+            </div>
+            <div className=" p-4 col-span-3 col-start-3 ">
+                ├─socials
+                <div className="flex pl-8 p-4 pt-2 pb-2  ">
+                    ├─
+                    <a href="https://github.com/Siddharth-Suri" target="_blank">
+                        <div className="cursor-pointer hover:underline hover:text-sky-300">
+                            github
+                        </div>
+                    </a>
+                </div>
+                <div className="flex pl-8 p-4 pt-2 pb-2 ">
+                    ├─
+                    <a
+                        href="https://www.linkedin.com/in/siddharth-suri-334529287/"
+                        target="_blank"
+                    >
+                        <div className="cursor-pointer hover:underline hover:text-sky-300">
+                            linkedin
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
