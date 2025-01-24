@@ -3,6 +3,7 @@ import { colourTheme } from "../../state/Theme";
 import { useRecoilValue } from "recoil";
 
 import { memo } from "react";
+import { PaymentModal } from "./PaymentModal";
 
 export const Projects = memo(() => {
     const navigate = useNavigate();
@@ -79,6 +80,9 @@ export const Projects = memo(() => {
                         </div>
                     </a>
                 </div>
+            </div>
+            <div className="p-4 col-span-3 col-start-3">
+                <PaymentModal></PaymentModal>
             </div>
         </div>
     );

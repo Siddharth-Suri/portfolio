@@ -1,12 +1,16 @@
 import { useNavigate } from "react-router-dom";
 import { colourTheme } from "../../state/Theme";
-import { useRecoilState, useRecoilValue } from "recoil";
+import { useRecoilState, useRecoilValue, useSetRecoilState } from "recoil";
 import { ThemeButton } from "./ThemeButton";
 import { HoverMechanic } from "../../state/HoveringMechanic";
+import { PaymentModal } from "./PaymentModal";
+
 import { memo } from "react";
+import { ModalState } from "../../state/ModalState";
 
 export const TopBar = memo(() => {
     const currentTheme = useRecoilValue(colourTheme);
+    const setModalState = useSetRecoilState(ModalState);
     const [currentHover, setCurrentHover] = useRecoilState(HoverMechanic);
     const navigate = useNavigate();
 
@@ -51,7 +55,14 @@ export const TopBar = memo(() => {
                     >
                         Buy me a
                     </div>
-                    <div className="pl-3 hover:underline">Coffee</div>
+                    <div
+                        className="pl-3 hover:underline"
+                        onClick={() => {
+                            setModalState(true);
+                        }}
+                    >
+                        Coffee
+                    </div>
                 </div>
             </div>
         </div>
