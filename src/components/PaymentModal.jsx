@@ -15,22 +15,28 @@ export const PaymentModal = memo(() => {
 
     return (
         currentModal && (
-            <div className="fixed inset-0 z-10 flex items-center justify-center bg-black bg-opacity-50">
+            <div className="fixed inset-0 z-10 flex items-center justify-center  bg-opacity-50">
                 <div
                     className={`p-6 h-auto w-auto rounded-lg shadow-lg ${
                         currentTheme === "dark"
-                            ? "bg-amber-950 text-white"
+                            ? "bg-amber-950 text-white "
                             : "bg-amber-100 text-black"
                     }`}
                 >
-                    <div className="flex rounded-lg p-1 gap-2">
+                    <div
+                        className={`flex rounded-lg p-1 gap-2  ${
+                            currentTheme === "dark"
+                                ? "bg-black"
+                                : "bg-amber-400"
+                        }`}
+                    >
                         <div
                             className="flex m-2 cursor-pointer transition ease-in-out duration-250  hover:text-rose-500"
                             onClick={closeModal}
                         >
                             🇽​
                         </div>
-                        <div className="text-xl   font-custom m-2">
+                        <div className={`text-xl  font-custom m-2`}>
                             Coffee Shop
                         </div>
                     </div>
